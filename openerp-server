@@ -1,0 +1,4 @@
+#!/bin/sh
+echo Running from /opt/odoo
+cd /opt/odoo
+exec /opt/odoo/openerp-server $@
