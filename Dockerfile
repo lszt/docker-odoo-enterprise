@@ -4,8 +4,8 @@ MAINTAINER Philipp Hug <philipp@hug.cx>
 # Set user back to root
 USER root
 
-RUN apt-get update && apt-get install -y python-gevent python-dev python-pip && rm -rf /var/lib/apt/lists/*
-RUN pip install psycogreen pysftp
+RUN apt-get update && apt-get install -y python-gevent python-dev python-pip libffi-dev libssl-dev && rm -rf /var/lib/apt/lists/*
+RUN pip install psycogreen pysftp xlwt
 
 ADD odoo /opt/odoo
 ADD enterprise /opt/odoo-enterprise
