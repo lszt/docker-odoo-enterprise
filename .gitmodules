@@ -1,9 +1,9 @@
 [submodule "odoo"]
 	path = odoo
-	url = ./odoo
+	url = git@github.com:odoo/odoo.git
 [submodule "enterprise"]
 	path = enterprise
-	url = ./enterprise
+	url = git@github.com:odoo/enterprise.git
 [submodule "odoo-addons-mfgt"]
 	path = odoo-addons-mfgt
-	url = ./odoo-addons-mfgt/
+	url = git@github.com:lszt/docker-odoo-enterprise.git
