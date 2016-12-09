@@ -1,0 +1,9 @@
+[submodule "odoo"]
+	path = odoo
+	url = ./odoo
+[submodule "enterprise"]
+	path = enterprise
+	url = ./enterprise
+[submodule "odoo-addons-mfgt"]
+	path = odoo-addons-mfgt
+	url = ./odoo-addons-mfgt/
