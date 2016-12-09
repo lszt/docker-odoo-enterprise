@@ -6,4 +6,4 @@
 	url = git@github.com:odoo/enterprise.git
 [submodule "odoo-addons-mfgt"]
 	path = odoo-addons-mfgt
-	url = git@github.com:lszt/docker-odoo-enterprise.git
+	url = git@github.com:lszt/odoo-addons-mfgt.git
