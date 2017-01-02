@@ -1,9 +1,12 @@
 [submodule "odoo"]
 	path = odoo
-	url = git@github.com:odoo/odoo.git
+	url = git@github.com:lszt/odoo.git
+	branch = 9.0-mfgt
 [submodule "enterprise"]
 	path = enterprise
-	url = git@github.com:odoo/enterprise.git
+	url = git@github.com:lszt/enterprise.git
+	branch = 9.0-mfgt
 [submodule "odoo-addons-mfgt"]
 	path = odoo-addons-mfgt
 	url = git@github.com:lszt/odoo-addons-mfgt.git
+	branch = master
