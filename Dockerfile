@@ -5,7 +5,7 @@ MAINTAINER Philipp Hug <philipp@hug.cx>
 USER root
 
 RUN apt-get update && apt-get install -y build-essential python-gevent python-dev python-pip libffi-dev libssl-dev && rm -rf /var/lib/apt/lists/*
-RUN pip install psycogreen pysftp xlwt pyCrypto unidecode
+RUN pip install setuptools==33.1.1 && pip install psycogreen pysftp xlwt pyCrypto unidecode
 
 ADD odoo /opt/odoo
 ADD enterprise /opt/odoo-enterprise
