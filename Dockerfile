@@ -4,6 +4,7 @@ MAINTAINER Philipp Hug <philipp@hug.cx>
 # Set user back to root
 USER root
 
+RUN sed '/jessie-updates/d' -i /etc/apt/sources.list
 RUN apt-get update && apt-get install -y build-essential python-gevent python-dev python-pip libffi-dev libssl-dev && rm -rf /var/lib/apt/lists/*
 RUN pip install setuptools==33.1.1 && pip install psycogreen pysftp xlwt pyCrypto unidecode enum
 
