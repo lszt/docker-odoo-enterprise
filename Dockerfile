@@ -6,7 +6,7 @@ USER root
 
 RUN sed '/jessie-updates/d' -i /etc/apt/sources.list
 RUN apt-get update && apt-get install -y build-essential python-gevent python-dev python-pip libffi-dev libssl-dev && rm -rf /var/lib/apt/lists/*
-RUN pip install setuptools==33.1.1 && pip install psycogreen pysftp xlwt pyCrypto unidecode enum
+RUN pip install setuptools==33.1.1 && pip install psycogreen paramiko==1.18.5 pysftp==0.2.9 xlwt unidecode enum ipaddress
 
 ADD odoo /opt/odoo
 ADD enterprise /opt/odoo-enterprise
